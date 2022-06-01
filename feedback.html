@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon (5).ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Mohave:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/feedback.css">
+    <title>feedback - LABIC</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="content-container" id="menu-lateral">
+            <img src="../img/Logo.png" alt="logoLABIC" id="logo">
+
+            <ul class="lista">
+                <li class="lista-content">
+                    <a href="./index1.html">Início</a>
+                </li>
+                <li class="lista-content">
+                    <a href="./projetos.html">Projeto</a>
+                </li>
+                <li class="lista-content">
+                    <a href="./comunicacao.html">Comunicação</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content-container" id="main">
+
+            <div class="cabecalho-main">
+                <h1>Feedback</h1>
+                <img src="../img/feedback.png" alt="iconFeedback" id="icon">
+            </div>
+
+            <div class="content-main">
+
+                <form action="" method="post">
+                    <div class="input-group">
+
+                        <label for="destina" id="dest">Destino:</label>
+
+
+                        <br>
+                        <div id="opc">
+                            <input type="radio" id="option" name="fav_language" value="HTML">
+                            <label for="Equipe">Equipe</label><br>
+                            <input type="radio" id="Individual" name="fav_language" value="Individual">
+                            <label for="Individual">Individual</label><br>
+                            <input type="radio" id="Projeto" name="Projeto" value="Projeto">
+                            <label for="Projeto">Projeto</label>
+                        </div>
+
+                        <select id="destina" name=" Nome " cols="30" rows="10">
+                        <option  value = "Selecione"> Selecione </option >
+                        <option  value = "Destinatário 1"> Destinatário 1 </option >
+                        <option  value = "Destinatário 2" > Destinatário 2 </option >
+                        <option  value = "Destinatário 3">Destinatário 3 </option >
+                        <option  value = "Destinatário 4">Destinatário 4 </option >
+                        <option  value = "Destinatário 5">Destinatário 5 </option >
+
+                        </select > 
+
+                       
+
+                    </div>
+                           
+                    <div class="input-group">
+                        <label for="mensagem" id="msg">Escreva seu Feedback:</label >
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                    </div>
+                    <button type="submit" class="button">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

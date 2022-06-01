@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon (5).ico" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/relatorio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mohave:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Harmattan&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <title>Entrega de relatório - LABIC</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="content-container" id="menu-lateral">
+            <img src="./img/Logo - LABIC (site).png" alt="logoLABIC" id="logo">
+
+            <ul class="lista">
+                <li class="lista-content">
+                    <a href="./index1.html">Início</a>
+                </li>
+                <li class="lista-content">
+                    <a href="./projetos.html">Projeto</a>
+                </li>
+                <li class="lista-content">
+                    <a href="./pesquisadores.html">Pesquisador</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content-container" id="main">
+
+            <div class="cabecalho-main">
+                <h1>Relatório</h1>
+                <img src="./img/icons8_report_file_128px.png" alt="iconComunicacao" id="icon">
+            </div>
+
+            <div class="content-main">
+
+                <form action="" method="post">
+
+                    <div class="tipo-relatorio">
+
+                        <h2>Qual o tipo de relatório? (selecione): </h2>
+                        <hr class="linhas">
+
+                        <div class="radio">
+
+                            <div class="radio-content">
+                                <input type="radio" name="tipo_rel" id="quin-radio" value="1">
+                                <label for="quin-radio">Quinzenal</label>
+                            </div>
+
+                            <div class="radio-content">
+                                <input type="radio" name="tipo_rel" id="parcial-radio" value="2">
+                                <label for="parcial-radio">Parcial</label>
+                            </div>
+
+                            <div class="radio-content">
+                                <input type="radio" name="tipo_rel" id="final-radio" value="3">
+                                <label for="final-radio">Final</label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="input-group">
+                        <label for="mensagem" id="msg">Digite seu relatório:</label >
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                    </div>
+                    <button type="submit" class="button">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+</body>
+
+</html>
