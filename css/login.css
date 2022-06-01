@@ -1,0 +1,174 @@
+    /*      ZERANDO O HTML      */
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    /*      DANDO COR AO BODY       */
+    
+    body {
+        background-color: #ADD8E6;
+    }
+    /*      DANDO ESTILO FORMULÁRIO     */
+    
+    #login_form {
+        width: 98vw;
+        height: 90vh;
+        border: none;
+        display: grid;
+        color: #ADD8E6;
+        border-radius: 20px;
+        margin: 5vh 0 0 0.8vw;
+        grid-template-rows: 1fr;
+        grid-template-columns: 2fr;
+        background-color: #020018;
+        box-shadow: 0 0 1rem #130c5c;
+        font-family: Mohave, sans-serif;
+        grid-template-areas: "login img";
+    }
+    /*      DANDO ESTILO AOS INPUTS     */
+    
+    .input-group {
+        position: relative;
+        margin-left: 9vw;
+        margin-top: 3vh;
+    }
+    
+    .input-group textarea {
+        padding-top: 0.1rem;
+    }
+    
+    .field {
+        background-color: transparent;
+        border: none;
+        width: 23vw;
+        font-size: 1.3rem;
+        font-family: Harmattan;
+        color: white;
+        border-bottom: 1px solid #ADD8E6;
+        height: 5vh;
+        outline: none;
+        margin: 2.5vh 0;
+    }
+    
+    .field-label {
+        left: 0;
+        top: 1rem;
+        font-size: 1.2rem;
+        position: absolute;
+        transition: all 0.3s;
+        text-transform: uppercase;
+    }
+    
+    .field:valid~label,
+    .field:focus~label {
+        top: 0;
+        font-size: 1rem;
+    }
+    
+    .field:focus {
+        background-color: transparent;
+    }
+    
+    .btn_submit {
+        border: none;
+        width: 23vw;
+        height: 5vh;
+        color: #eee;
+        border-radius: 3.5px;
+        font-family: Harmattan;
+        text-transform: uppercase;
+        box-shadow: 0 0.1rem 0.8rem rgba(19, 126, 226, 0.24);
+        font-size: 1.3rem;
+        margin-left: 9vw;
+        margin-top: 3vh;
+        background: linear-gradient(#a94fe9, #2f23b3);
+        transition: all ease-in-out .5s;
+    }
+    /*      APENAS PARA POSICIONAR A DIV LONGE DA BORDA     */
+    
+    #div_login {
+        padding-top: 13vh;
+        padding-left: 5vw;
+        border-radius: 20px 0 0 20px;
+        grid-area: login;
+        width: 100%;
+    }
+    /*      TRATANDO A IMAGEM       */
+    
+    #div_img {
+        grid-area: img;
+        background-color: white;
+        border-radius: 0 20px 20px 0;
+        height: 90vh;
+    }
+    /*      ESTILIZANDO OS PLACEHOLDERS DOS INPUTS      */
+    
+    input::placeholder {
+        padding: 0.01vw;
+        font-family: Arial, sans-serif;
+        letter-spacing: 0.01vw;
+        font-size: 1em;
+    }
+    /*      ESTILIZANDO O LINK DO "ESQUECEU A SENHA?"       */
+    
+    #link_esqueceu {
+        text-decoration: none;
+        color: blanchedalmond;
+        font-size: 1em;
+    }
+    /*      ESTILO PARA O BOTÃO DE ENTRAR       */
+    
+    #button_entrar {
+        background-color: #0599D3;
+        height: 8vh;
+        width: 8vw;
+        margin-top: 2vh;
+        border-radius: 8px;
+        margin-left: 13vw;
+        color: aliceblue;
+    }
+    
+    .btn_submit:hover {
+        color: #0a0635;
+        transition: ease-in-out .6s;
+        background: linear-gradient(#ADD8E6, #21c2f8);
+    }
+    /*          DAR ESPAÇAMENTO AO ELEMENTOS        */
+    
+    #link_esqueceu {
+        margin-left: 9vw;
+    }
+    /*      DEFININDO O TAMANHO DA IMAGEM       */
+    
+    #img_labic {
+        height: 90vh;
+        width: 46vw;
+    }
+    /*      ESTILIZANDO O H1 E H2       */
+    
+    h1 {
+        font-family: Harmattan, sans-serif;
+        letter-spacing: 2px;
+        padding-left: 5vw;
+        font-size: 3.5vw;
+    }
+    
+    h2 {
+        margin-top: 4vh;
+        margin-left: 5vw;
+        letter-spacing: 1px;
+        padding-left: 9vw;
+        font-weight: 400;
+        font-size: 2vw;
+    }
+    
+    .linhas {
+        width: 80%;
+        height: 1px;
+        color: #eeee;
+        border-width: 0;
+        text-align: center;
+        margin: 1.5vh auto 0 0;
+        border-top-width: 1px;
+    }

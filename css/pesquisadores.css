@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nunito Sans;
+}
+
+button {
+    background-color: #020018;
+    border: none;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+h1 {
+    margin: 10vh 0 0 10vw;
+    letter-spacing: 0.2vw;
+    display: flex;
+    font-size: 4vw;
+}
+
+a {
+    text-decoration: none;
+    color: #ADD8E6;
+}
+
+li {
+    padding-left: 4vw;
+    margin-top: 5vh;
+}
+
+
+/*      ESTILIZAR O SITE DANDO O DIOSPLAY GRID          */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-areas: "menu cabecalho" "menu main" "menu main";
+}
+
+
+/*      MENU LATERAL        */
+
+.menu-content {
+    background-color: #020018;
+    grid-area: menu;
+    color: #ADD8E6;
+    height: 100vh;
+    width: 15vw;
+    position: fixed;
+    border-radius: 0 12px 12px 0;
+    font-size: 1.5vw;
+}
+
+#lista {
+    padding-top: 5vh;
+}
+
+.lista:hover {
+    color: #16b2f0;
+}
+
+#logo {
+    height: 22vh;
+    width: 11vw;
+    margin: 2vw;
+    object-fit: contain;
+}
+
+
+/*      ESTILIZANDO O CABEÇALHO     */
+
+.cabecalho-content {
+    background-color: #ADD8E6;
+    grid-area: cabecalho;
+    color: #020018;
+    height: 25vh;
+    width: 89vw;
+    display: flex;
+    margin-left: 9vw;
+}
+
+#png_botao {
+    height: 7vh;
+    padding-top: 0.5vh;
+    margin: 3px;
+}
+
+#botao_mais {
+    border: none;
+    height: 11vh;
+    width: 10vw;
+    margin: 9vh 0 0 34vw;
+    padding: 0;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+#new_pesq {
+    font-family: Mohave;
+    padding: 2px;
+    font-size: 1.2vw;
+    padding: 3px;
+    color: #ADD8E6;
+}
+
+.imprimir {
+    width: 20%;
+    padding: 5px;
+    margin-left: 29vw;
+    background-color: #020018;
+    color: #ADD8E6;
+    font-family: Mohave, sans-serif;
+    border: none;
+    border-radius: 5px;
+    transition: all .6s ease-in-out;
+    font-size: 1.3vw;
+}
+
+.imprimir:hover {
+    color: #020018;
+    transition: all .6s ease-in-out;
+    background-color: #ADD8E6;
+    border: 1px solid #020018;
+}
+
+
+/*      ESTILIZANDO O CONTEÚDO PRINCIPAL        */
+
+.main-content {
+    background-color: #ffffff;
+    grid-area: main;
+    color: #020018;
+    padding: 3vh 2.5vw;
+    height: 100%;
+    width: 85vw;
+    margin-left: 13vw;
+    margin-top: -48.3vh;
+}
+
+#conteudo_main {
+    text-align: justify;
+}
+
+#icon_proj {
+    height: 5vw;
+    margin-top: 2vh;
+    margin-left: 1vw;
+}
+
+.input-group {
+    position: relative;
+    margin-left: 9vw;
+    margin-top: 3vh;
+}
+
+.input-group textarea {
+    padding-top: 0.1rem;
+}
+
+.pesquisa {
+    display: flex;
+    margin-left: 7vw;
+}
+
+.select {
+    height: 5vh;
+    margin-top: 5.5vh;
+    font-family: Mohave, sans-serif;
+    font-size: 1rem;
+    background-color: #ADD8E6;
+    border-radius: 5px;
+}
+
+.field {
+    background-color: #ADD8E6;
+    border: none;
+    width: 25vw;
+    font-size: 1rem;
+    color: #020018;
+    border: 1px solid #020018;
+    height: 5vh;
+    outline: none;
+    margin: 2.5vh 0;
+    border-radius: 3px;
+    font-family: Mohave, sans-serif;
+}
+
+.field-label {
+    left: 0;
+    top: 1.1rem;
+    font-size: 1rem;
+    position: absolute;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    padding-left: 5px;
+    font-size: 1.5vw;
+}
+
+.field:valid~label,
+.field:focus~label {
+    top: 0;
+    font-size: 0.8rem;
+}
+
+#pesq {
+    height: 5vh;
+    padding: 1vh;
+}
+
+#btn-pesq {
+    margin: 5.2vh 1vw;
+    background-color: #ADD8E6;
+}
+
+
+/*      ESTILIZAR A BARRA DE ROLAGEM        */
+
+body::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #020018;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #16b2f0;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 2px solid;
+    /* creates padding around scroll thumb */
+}

@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Nunito sans, sans-serif;
+}
+
+textarea {
+  border-radius: 8px;
+  background-color: #ADD8E6;
+  border: none;
+  outline: none;
+  text-align: justify;
+  resize: none;
+  padding: 10px;
+  width: 65vw;
+  font-size: 1rem;
+  font-family: Montserrat, sans-serif;
+}
+
+h1 {
+  margin: 5vh 7vw;
+  font-family: Mohave, sans-serif;
+  font-size: 4.5vw;
+}
+
+label {
+  font-size: 1.5vw;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  color: #16b2f0;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.lista-content {
+  margin-top: 2vh;
+  font-family: Mohave, sans-serif;
+  font-size: 2vw;
+}
+
+.cabecalho-main {
+  display: flex;
+}
+
+.button {
+  font-family: Mohave, sans-serif;
+  width: 10vw;
+  height: 7vh;
+  border-radius: 10px;
+  border: 1px solid #ADD8E6;
+  color: #ffffff;
+  font-family: Harmattan, sans-serif;
+  font-size: 1.5vw;
+  margin: 4vh 35vw;
+  background-color: #020018;
+  box-shadow: 0 0 1rem #020018;
+}
+
+.button:hover {
+  border: 1px solid #020018;
+  color: #020018;
+  background-color: #ADD8E6;
+  box-shadow: 0 0 1rem #02b9f7;
+  transition: all 0.5s;
+}
+
+#menu-lateral {
+  color: aliceblue;
+  background-color: #020018;
+  height: 100vh;
+  width: 16.5vw;
+  position: fixed;
+}
+
+#main {
+  color: #020018;
+  background-color: #ffffff;
+  height: 100%;
+  width: 80vw;
+  margin-left: 15vw;
+}
+
+#logo {
+  height: 26vh;
+  width: 15vw;
+  margin: 4vh 0.5vw;
+  object-fit: contain;
+}
+
+#destina {
+  height: 6vh;
+  width: 50vw;
+  margin: 7vh 7vw;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #020018;
+  background-color: #ADD8E6;
+
+}
+/*height: 6vh;
+  width: 60vw;
+  margin: 7vh 7vw;
+  border-radius: 5px;
+  font-size: 20px;
+  border: 1px solid #020018;
+  color: #ffffff;
+  background-color: #ADD8E6;
+  box-shadow: 0 0 1rem #020018;
+  transition: all 0.5s;*/
+#mensagem {
+  height:40vh;
+  border-radius: 5px;
+  font-size: 20px;
+  border: 1px solid #020018;
+  color: #020018;
+  background-color: #ADD8E6;
+
+}
+
+#opc{
+  margin-left: -55vw;
+
+}
+#dest {
+  margin-left: -55vw;
+}
+
+#msg {
+  margin-left: -48vw;
+}
+
+#icon {
+  height: 8vh;
+  margin: 5vh 0 0 -6.5vw;
+}
+
+
+/*      ESTLIZANDO A BARRA DE ROLAGEM       */
+
+body::-webkit-scrollbar {
+  width: 12px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #020018;
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #16b2f0;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 2px solid;
+  /* creates padding around scroll thumb */
+}
+

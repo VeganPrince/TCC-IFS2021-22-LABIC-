@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #ADD8E6;
+}
+
+li {
+    padding-left: 4vw;
+    margin-top: 5vh;
+}
+
+button {
+    background-color: #020018;
+    border: none;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+h1 {
+    margin: 5vh 0 0 8vw;
+    letter-spacing: 0.2vw;
+    display: flex;
+    font-size: 5vw;
+    font-family: Mohave, sans-serif;
+}
+
+
+/*      ESTILIZANDO O DISPLAY GRID      */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-areas: "menu cabecalho" "menu main" "menu main";
+}
+
+
+/*      ESTILIZANDO O MENU LATERAL      */
+
+.menu {
+    background-color: #020018;
+    grid-area: menu;
+    color: #ADD8E6;
+    height: 100vh;
+    width: 15vw;
+    position: fixed;
+    border-radius: 0 12px 12px 0;
+    font-size: 1.5vw;
+    font-family: mohave, nunito sans, sans-serif;
+}
+
+#lista {
+    padding-top: 5vh;
+}
+
+.lista:hover {
+    color: #16b2f0;
+}
+
+
+/*      ESTILIZANDO O CABEÇALHO     */
+
+.cabecalho {
+    background-color: #ADD8E6;
+    grid-area: cabecalho;
+    color: #020018;
+    height: 23.5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#btn-new {
+    width: 10vw;
+}
+
+
+/*      ESTILIZANDO O CONTEÚDO PRINCIPAL        */
+
+.main {
+    background-color: #ffffff;
+    grid-area: main;
+    color: #020018;
+    padding: 3vh 2.5vw;
+    height: 100%;
+    width: 84vw;
+    grid-row-start: 2;
+    margin-top: -43vh;
+}
+
+#conteudo_main {
+    text-align: justify;
+}
+
+#logo {
+    height: 22vh;
+    width: 11vw;
+    margin: 2vw;
+    object-fit: contain;
+}
+
+#png_botao {
+    height: 7vh;
+    padding-top: 0.5vh;
+    margin: 3px;
+}
+
+#icon_proj {
+    height: 5vw;
+    margin-top: 2vh;
+    margin-left: 1vw;
+}
+
+#botao_mais {
+    border: none;
+    height: 11vh;
+    width: 10vw;
+    margin: 5vh 0 0 35vw;
+    padding: 0;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+#new_proj {
+    font-family: Mohave;
+    padding: 2px;
+    font-size: 1.5vw;
+    color: #ADD8E6;
+}
+
+.input-group {
+    position: relative;
+    margin-left: 9vw;
+}
+
+.input-group textarea {
+    padding-top: 0.1rem;
+}
+
+.pesquisa {
+    display: flex;
+    margin: -7vh 0 0 39vw;
+    font-family: mohave, nunito sans, sans-serif;
+    width: 50%;
+    height: 10vh;
+    margin-bottom: 2vh;
+}
+
+.field {
+    background-color: #ADD8E6;
+    border: none;
+    width: 25vw;
+    font-size: 1rem;
+    font-family: Mohave, sans-serif;
+    color: #020018;
+    border: 1px solid #020018;
+    height: 5vh;
+    outline: none;
+    margin: 2.5vh 0;
+    border-radius: 3px;
+    padding-left: 3px;
+}
+
+.field-label {
+    left: 0;
+    top: 1.3rem;
+    font-size: 1rem;
+    position: absolute;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    padding-left: 5px;
+}
+
+.field:valid~label,
+.field:focus~label {
+    top: 0;
+    font-size: 0.8rem;
+}
+
+.list-proj {
+    background-color: #ADD8E6;
+    border-radius: 5px;
+    color: #020018;
+    padding: 1vh;
+    border: 1px solid #020018;
+}
+
+h2 {
+    font-family: mohave, nunito sans, sans-serif;
+}
+
+h3 {
+    font-family: nunito sans, sans-serif;
+    font-weight: lighter;
+    margin-bottom: 1vh;
+}
+
+#pesq {
+    height: 5vh;
+    padding: 1vh;
+    font-family: mohave, nunito sans, sans-serif;
+}
+
+#btn-pesq {
+    margin: 1.5vh 1vw;
+    background-color: #ADD8E6;
+}
+
+.imprimir {
+    width: 20%;
+    padding: 5px;
+    margin-left: 29vw;
+    background-color: #020018;
+    color: #ADD8E6;
+    font-family: Mohave, sans-serif;
+    border: none;
+    border-radius: 5px;
+    transition: all .6s ease-in-out;
+    font-size: 1.3vw;
+}
+
+.imprimir:hover {
+    color: #020018;
+    transition: all .6s ease-in-out;
+    background-color: #ADD8E6;
+    border: 1px solid #020018;
+}
+
+
+/*      ESTLIZANDO A BARRA DE ROLAGEM       */
+
+body::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #020018;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #16b2f0;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 2px solid;
+    /* creates padding around scroll thumb */
+}
