@@ -1,0 +1,1 @@
+<h1>TCC - LABIC/Instituto Federal de Sergipe - Campus Aracaju.</h1>Projeto de TCC do curso técnico integrado em informática do Instituto Federal de Sergipe - Campus Aracaju, realizado no ano de 2021 e finalizado no primeiro bimestre do ano de 2022.
